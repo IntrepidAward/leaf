@@ -121,6 +121,27 @@ class LojaSustentavelRotaVerde:
                     
                     background: #f0f0f0;
                 }}
+                @media (max-width: 180px) {
+    #map {
+        width: 100%;
+        height: 150px; /* Adjust height for small screens */
+    }
+
+    #directionsPanel {
+        width: 100%;
+        height: 100px; /* Adjust height to fit screen */
+        font-size: 10px; /* Reduce text size */
+        padding: 2px; /* Minimize padding */
+        overflow: auto;
+        
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #f0f0f0; /* Background for readability */
+        border-top: 2px solid #ccc; /* Visual separation */
+    }
+}
+
             </style>
         </head>
         <body onload="initMap()">
